@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import './cart.css';
 import { useSelector, useDispatch } from 'react-redux';
-import { removeFromCart } from '../../redux/actions/actions';
-import { toast,ToastContainer } from 'react-toastify';
+import { removeFromCart } from '../../components/action/action';
+import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 const Cart = () => {
     const [cartItem, setCartItem] = useState([]);
@@ -10,16 +10,16 @@ const Cart = () => {
     const cartItems = useSelector((state) => state.cart.items);
 
     let a = 0;
-    let cost = cartItems.map((item)=>{return  a = a+ item.price})
+    let cost = cartItems.map((item) => { return a = a + item.price })
 
     useEffect(() => {
         setCartItem(cartItems);
     }, [cartItems])
 
-    const handleRemoveFromCart=(id)=>{
-        toast.error("Item Removed From Cart",{
-            position:"bottom-right"
-          })
+    const handleRemoveFromCart = (id) => {
+        toast.error("Item Removed From Cart", {
+            position: "bottom-right"
+        })
         dispatch(removeFromCart(id));
     }
     return (
@@ -63,7 +63,7 @@ const Cart = () => {
                 <div className="proceedToBuy">Proceed To Buy</div>
 
             </div>
-            <ToastContainer/>
+            <ToastContainer />
         </div>
     )
 }

@@ -1,7 +1,5 @@
-import React from 'react';
+
 import './navbarBelt.css';
-import amazonLogo from '../../../Assets/amazonLogo.png';
-import india from '../../../Assets/india.png';
 import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 import ArrowDropDownOutlinedIcon from '@mui/icons-material/ArrowDropDownOutlined';
 import SearchIcon from '@mui/icons-material/Search';
@@ -18,7 +16,7 @@ const NavbarBelt = () => {
         <div className='navbarBelt'>
             <div className="leftNavBelt">
                 <Link to={'/'} className="leftNavBeltLogo" >
-                    <img className='amazonLogoNavbar' src={amazonLogo} alt='amazonLogo' />
+                    <img className='amazonLogoNavbar' src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt='amazonLogo' />
                     <span className='navbar_inLogo'>.in</span>
                 </Link>
 
@@ -44,11 +42,11 @@ const NavbarBelt = () => {
 
                 <Link to={'/cart'} className="helloSignInNavbaeBelt">
                     <span className='cartItemNumberNavbarBelt'>{cartItems.length}</span>
-                    <div className="helloTopNavbarBelt"><ShoppingCartOutlinedIcon/> <span className='cartTitle'>Cart</span></div>
-                    
+                    <div className="helloTopNavbarBelt"><ShoppingCartOutlinedIcon /> <span className='cartTitle'>Cart</span></div>
+
 
                 </Link>
-                
+
 
 
             </div>

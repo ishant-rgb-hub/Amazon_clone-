@@ -13,10 +13,6 @@ const NavbarBanner = () => {
   return (
     <div className="navbarBanner">
       <div className="navbarBannerOptionsLeft">
-
-        {/* please watch the video for code */}
-
-
       </div>
       <div className="navbarBannerRightSide">
         <img src="https://f.media-amazon.com/images/G/31/img19/SiddMiniTV/26MayHero/SWM_400x391._CB557661637_.jpg" alt='amazonPrime Logo' />
