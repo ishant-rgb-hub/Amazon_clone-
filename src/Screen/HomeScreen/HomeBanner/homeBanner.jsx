@@ -12,13 +12,13 @@ const HomeBanner = () => {
                 {
                     homeBannerItemProduct.product.map((item, ind) => {
                         return (
-                            <div className="homeBannerItemDivCard">
+                            <div className="homeBannerItemDivCard" key={ind}>
                                 <div className="homeBannerItemDivCardTitle">{item.itemTitle}</div>
                                 <div className="imgHomeBannerItemDivCard">
                                     {
-                                        item.imgs.map((it, ind )=> {
+                                        item.imgs.map((it, imgInd) => {
                                             return (
-                                                <div className="imgBannerHomeDiv">
+                                                <div className="imgBannerHomeDiv" key={imgInd}>
                                                     <img className='imgBannerHomeDivImg' src={it} />
                                                     <div className="imgBannerImgName">boAt Stone 1800 Bluet</div>
                                                 </div>

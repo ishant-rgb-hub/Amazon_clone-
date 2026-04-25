@@ -4,7 +4,7 @@ import StarOutlineIcon from '@mui/icons-material/StarOutline';
 import StarRateIcon from '@mui/icons-material/StarRate';
 import productDetail from './products.json';
 import { useSelector, useDispatch } from 'react-redux';
-import { addToCart } from '../../redux/actions/actions';
+import { addToCart } from '../../components/action/action';
 import { toast,ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 const Products = () => {

@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 import './footer.css';
-import amazonLogo from '../../Assets/amazonLogo.png'
+const amazonLogo = "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg";
 const Footer = () => {
     return (
         <div className="footer">
@@ -23,14 +23,14 @@ const Footer = () => {
                     <div className="contentFooterTitle">Make Money With US</div>
 
                 </div>
-                
+
                 <div className="footerCont1">
                     <div className="contentFooterTitle">Lets Us Help You</div>
 
                 </div>
             </div>
             <div className="amazonImg">
-                <img className='amazonImgFooter' src={amazonLogo} />
+                <img className='amazonImgFooter' src='https://missouripartnership.com/wp-content/uploads/2025/04/amazon-logo-squid-ink-smile-orange.png' />
             </div>
         </div>
     )
